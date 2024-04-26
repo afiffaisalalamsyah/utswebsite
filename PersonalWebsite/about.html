@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <title>Tel U Surabaya | Afif</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav id="header">
+      <div class="nav-logo"></div>
+      <div class="nav-social-icons">
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        <div class="icon"><i class="fab fa-facebook"></i></div>
+        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+        <div class="icon"><i class="fab fa-linkedin"></i></div>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="about.html" class="nav-link active-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="project.html" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="contact.html" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="fas fa-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <main class="wrapper">
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-name">
+            <p>I'm a <span class="typedText"></span></p>
+          </div>
+          <div class="featured-text-info">
+            <p>
+              I'm a junior web developer who is passionate about delivering
+              engaging and functional digital experiences. Here, we can
+              explore the world of coding and creation together!"
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn">
+              My CV <i class="uil uil-file-alt"></i>
+            </button>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="assets/images/afif.jpg" alt="avatar" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="section_2" id="about">
+      <div class="top-header">
+        <h1>About Me</h1>
+      </div>
+      <div class="row_2">
+        <div class="col_2">
+          <div class="about-info">
+            <h3>My Introduction</h3>
+            <p>
+              <span style="display: block; margin-bottom: 20px;">
+                Hi all! I'm excited to share with you here. As a junior web
+                developer, I have found my calling in creating amazing things in
+                the digital world. With a strong foundation in programming
+                languages and web design, I am constantly exploring and learning
+                to expand my skills in creating stunning and well-functioning
+                online experiences.
+              </span>
+              <span style="display: block; margin-bottom: 20px;">
+                In my journey as a junior web developer, I have been involved in
+                various challenging and fulfilling projects. From building simple
+                websites to designing complex web applications, each step brought
+                valuable experiences that helped me grow and develop. I am excited
+                to continue exploring the world of web development and collaborating
+                with peers to create inspiring, innovative solutions.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col">
+            <div class="skills-header">
+              <h3>Frontend</h3>
+            </div>
+            <div class="skills-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="skills-header">
+              <h3>Backend</h3>
+            </div>
+            <div class="skills-list">
+              <span>PHP</span>
+              <span>C++</span>
+            </div>
+            <div class="skills-header">
+              <h3>Database</h3>
+            </div>
+            <div class="skills-list">
+              <span>MySQL</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Experience</h1>
+      <table class="zigzag">
+        <thead>
+          <tr>
+            <th class="header">No</th>
+            <th class="header">PT</th>
+            <th class="header">Jobdesk</th>
+            <th class="header">Description</th>
+            <th class="header">Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>Frontend</td>
+            <td>HTML, CSS, and JavaScript.</td>
+            <td>6 months</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>Backend</td>
+            <td>PHP and MySQL.</td>
+            <td>8 months</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>DEF</td>
+            <td>Full Stack</td>
+            <td>Frontend and backend.</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>GHI</td>
+            <td>UI/UX</td>
+            <td>Web applications.</td>
+            <td>9 months</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>JKL</td>
+            <td>Mobile App</td>
+            <td>Mobile for iOS and Android.</td>
+            <td>1 months</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div onclick="scrollToTop()" class="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <footer>
+      <div class="bottom-footer">
+        <p>Copyright &copy; Afif Faisal - Tel u Surabaya</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

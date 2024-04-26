@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <title>Tel U Surabaya | Afif</title>
+    <style>
+        .contain {
+            max-width: 1170px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header .title {
+            font-size: 35px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--text-color-second);
+            ;
+            line-height: 1.2;
+        }
+
+        .testimonials {
+            padding: 100px 0;
+        }
+
+        .testimonials-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+        .testimonials-item .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonials-item img {
+            max-width: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .testimonials-item .name {
+            font-size: 24px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: hsl(0, 0%, 0%);
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .testimonials-item .job {
+            text-transform: capitalize;
+            color: hsl(0, 0%, 40%);
+        }
+
+        .testimonials-item p {
+            margin-top: 20px;
+            color: hsl(0, 0%, 40%);
+        }
+
+        .testimonials-item .rating {
+            margin-top: 15px;
+            font-size: 24px;
+            color: var(--first-color);
+        }
+
+        .testimonials .swiper-pagination {
+            position: relative;
+            margin-top: 40px;
+            bottom: auto;
+        }
+
+        .testimonials .swiper-pagination-bullet {
+            height: 12px;
+            width: 12px;
+            background-color: var(--second-color);
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav id="header">
+            <div class="nav-logo">
+            </div>
+            <div class="nav-social-icons">
+                <div class="icon"><i class="fab fa-instagram"></i></div>
+                <div class="icon"><i class="fab fa-facebook"></i></div>
+                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="icon"><i class="fab fa-linkedin"></i></div>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="project.html" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="contact.html" class="nav-link active-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fas fa-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Contact me</h1>
+                    <span>Do you have a project in mind, contact me here!</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <p><i class="uil uil-envelope"></i> Email: afiffaisal.com</p>
+                            <p><i class="uil uil-phone"></i> Telepon: 081217420886</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form-control" action="submit.php" method="post">
+                            <div class="form-inputs">
+                                <input type="text" name="name" class="input-field" placeholder="Name" required>
+                                <input type="email" name="email" class="input-field" placeholder="Email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="message" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="contain">
+                    <div class="section-header">
+                        <h2 class="title">what our clients say</h2>
+                    </div>
+                    <div class="testimonials-content">
+                        <div class="swiper testimonials-slider js-testimonials-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide testimonials-item">
+                                    <div class="info">
+                                        <img src="assets/images/img1.jpg" alt="img">
+                                        <div class="text-box">
+                                            <h3 class="name">Dany</h3>
+                                            <span class="job">Software Engineer</span>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, beatae.
+                                    </p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                    <div class="info">
+                                        <img src="assets/images/img2.jpg" alt="img">
+                                        <div class="text-box">
+                                            <h3 class="name">Windi</h3>
+                                            <span class="job">UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <p>Integer consequat sapien non efficitur feugiat. Proin ultrices massa at arcu
+                                        interdum, nec scelerisque sapien mollis.</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                    <div class="info">
+                                        <img src="assets/images/img3.jpg" alt="img">
+                                        <div class="text-box">
+                                            <h3 class="name">Faisal</h3>
+                                            <span class="job">Frontend Developer</span>
+                                        </div>
+                                    </div>
+                                    <p>Vivamus ut libero vel quam fermentum ullamcorper. Curabitur euismod nunc eget
+                                        odio vestibulum, vel gravida metus faucibus.</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                    <div class="info">
+                                        <img src="assets/images/img2.jpg" alt="img">
+                                        <div class="text-box">
+                                            <h3 class="name">Kayla</h3>
+                                            <span class="job">Project Manager</span>
+                                        </div>
+                                    </div>
+                                    <p>Maecenas quis lectus non dolor eleifend auctor. Phasellus et arcu in metus
+                                        lacinia pretium a a metus.</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                    <div class="info">
+                                        <img src="assets/images/img3.jpg" alt="img">
+                                        <div class="text-box">
+                                            <h3 class="name">Afif</h3>
+                                            <span class="job">Marketing Specialist</span>
+                                        </div>
+                                    </div>
+                                    <p>Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                        ultrices posuere cubilia Curae.</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination js-testimonials-pagination"></div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <div onclick="scrollToTop()" class="scrollTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <footer>
+            <div class="bottom-footer">
+                <p>Copyright &copy; Afif Faisal - Tel u Surabaya</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.js-testimonials-pagination',
+                clickable: true
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 2
+                }
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
